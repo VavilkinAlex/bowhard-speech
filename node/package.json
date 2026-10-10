@@ -1,0 +1,44 @@
+{
+  "name": "bowhard-speech",
+  "version": "0.1.0",
+  "description": "Расшифровка аудио и видео в текст и озвучка текста через сервисы Bowhard (bowhard.ru)",
+  "keywords": [
+    "speech-to-text",
+    "text-to-speech",
+    "transcription",
+    "subtitles",
+    "srt",
+    "bowhard",
+    "russian",
+    "n8n"
+  ],
+  "homepage": "https://bowhard.ru",
+  "bugs": {
+    "url": "https://bowhard.ru/blog/"
+  },
+  "license": "MIT",
+  "author": "Bowhard <mail@bowhard.ru> (https://bowhard.ru)",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "bin": {
+    "bowhard-speech": "./bin/bowhard-speech.js"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VavilkinAlex/n8n-bowhard-templates.git"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
