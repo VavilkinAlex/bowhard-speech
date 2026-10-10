@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bowhard-speech"
+version = "0.1.0"
+description = "Расшифровка аудио и видео в текст и озвучка текста через сервисы Bowhard"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Bowhard", email = "mail@bowhard.ru" }]
+keywords = ["speech-to-text", "text-to-speech", "transcription", "subtitles", "srt", "bowhard", "russian"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Natural Language :: Russian",
+]
+
+[project.urls]
+Homepage = "https://bowhard.ru"
+Documentation = "https://bowhard.ru/rasshifrovka"
+"Озвучка текста" = "https://bowhard.ru/ozvuchka"
+
+[project.scripts]
+bowhard-speech = "bowhard_speech.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
